@@ -1,3 +1,12 @@
+// All about Number
+let a = 10;        // integer
+let b = 10.5;      // float
+let c = 2e5;       // scientific notation
+typeof a; // "number"
+
+
+
+
 const score = 400
 // console.log(score);
 

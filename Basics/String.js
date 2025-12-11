@@ -1,3 +1,54 @@
+// Core String////////////////////
+// 1) What a string is
+
+// In JavaScript a string is a sequence of UTF-16 code units representing textual data.
+
+// There are string primitives (type string) and String objects (created with new String(...)). Usually you use primitives.
+
+// typeof "x" === "string".
+
+// new String("x") creates an object wrapper — avoid it; it behaves weirdly in comparisons.
+
+// Strings are immutable: operations produce new string values; methods do not modify the original.
+
+// ****2) Creating strings / literal forms
+const a = "hello";            // double quotes
+const b = 'hello';            // single quotes
+const c = `hello`;            // backticks (template literal)
+const d = String(123);        // conversion
+const e = new String("x");    // String object (avoid)
+
+// const s = "hello";
+// s[1] === "e";  //true
+// s.charAt(1) === "e";  //true
+
+"💩".length        // 2 (surrogate pair or it's store unicode)
+// // Because “💩” cannot fit in a single 16-bit value.
+// JavaScript stores it as two pieces internally: like [D83D] [DCA9]
+
+
+"🇺🇸".length       // 4 (it's not usual 'us', here 2 imogies, so 2*2=4)
+
+"e\u0301".length   // 2 (e + combining acute accent)
+Array.from("💩").length // 1 (Array.from() works on code points, not code units. thath's why 1)
+
+// string iteration
+// const str = "hello";
+
+// for (const ch of str) {
+//   console.log(ch);  // h e l l w  =>it will come new line
+// }
+
+// console.log(Array.from("hello"));  //["h", "e", "l", "l", "o"]
+
+
+
+
+
+
+
+
+
 // ==========================
 // STRING PROPERTIES
 // ==========================
