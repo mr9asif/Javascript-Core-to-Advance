@@ -43,3 +43,24 @@ console.log(typeof anotherId);
 
 //  In Stack memory-- if i copy a variable it actually coppy the value not reference.
 // in Heap memory--if i coppy a variable and change the value it also change the previous one because it actually referene the previos one.
+
+
+
+// data types
+// primitive data types -->7 types
+// string, number , boolean , null , undefine,symbol, bigint
+
+
+
+// Data type reference
+// arrays
+
+// functions
+
+// dates
+
+// regex
+
+// maps
+
+// sets
